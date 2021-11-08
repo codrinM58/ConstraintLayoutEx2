@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorBlue"
+        android:gravity="center"
+        android:text="30-50%"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.50"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorOrange"
+        android:gravity="center"
+        android:text="20-50%"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintWidth_percent="0.50"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorRed"
+        android:gravity="center"
+        android:text="20-50%"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/tv6"
+        app:layout_constraintWidth_percent="0.50" />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPurple"
+        android:gravity="center"
+        android:text="70-50%"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/tv4"
+        app:layout_constraintWidth_percent="0.50" />
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorOlive"
+        android:gravity="center"
+        android:text="25-50%"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/tv5"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/tv3"
+        app:layout_constraintWidth_percent="0.50"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGreen"
+        android:gravity="center"
+        android:text="45-50%"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/tv5"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintTop_toBottomOf="@+id/tv7"
+        app:layout_constraintWidth_percent="0.50" />
+</androidx.constraintlayout.widget.ConstraintLayout>
